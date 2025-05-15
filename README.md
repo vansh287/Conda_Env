@@ -1,20 +1,21 @@
+
 Below is a plug‑and‑play template that meets all eight elements, pairs each learning goal with readings from ***An Introduction to Statistical Learning (ISLR, 2e)*** and ***Probabilistic Machine Learning (PML, 2022/23)***, and splits an eight‑week program into **4 weeks of guided learning** and **4 weeks of team implementation**.
 
 ---
 
 ## 1  Program Snapshot
 
-| Item                   | Specification                                                                                                                                    |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Title**              | Statistical Learning & Implementation Internship                                                                                                 |
-| **Cohort**             | 5 graduate‑level interns (probability + Python prerequisite)                                                                                     |
-| **Calendar**           | 8 weeks (Mon 12 May → Fri 4 Jul 2025), \~30 hrs/week <br> • Morning: 2 h theory + lab (Mon‑Thu) <br> • Afternoon: 4 h project / self‑study       |
-| **End‑products**       | Reproducible codebase (GitHub), technical report, slide deck, recorded demo                                                                      |
-| **Primary texts**      | ISLR 2e (James et al., 2023) ([An Introduction to Statistical Learning][1])  ·  PML Books 1&2 (Murphy, 2022‑23) ([probml.github.io][2])          |
-| **Stack**              | Python 3.11, conda env, pandas, scikit‑learn, matplotlib, seaborn, PyMC/NumPyro, GitHub Projects, Docker, JupyterHub (on IITM GPU node or Colab) |
-| **Capstone theme**     | “End‑to‑end predictive modelling on a public health‑care cost dataset” (regression + uncertainty quantification)                                 |
-| **Mentoring rhythm**   | Daily stand‑up (10 min), Weekly code‑review (Wed), Mid‑term demo (end W4), Final rehearsal (W8‑Wed)                                              |
-| **Evaluation weights** | Technical accuracy 30 % · Statistical rigour 20 % · Reproducibility & docs 15 % · Teamwork 15 % · Communication 10 % · Creativity 10 %           |
+| Item                   | Specification                                                                                                                                                                                                                                      |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Title**              | Statistical Learning & Implementation Internship                                                                                                                                                                                                   |
+| **Cohort**             | 5 graduate‑level interns (probability + Python prerequisite)                                                                                                                                                                                       |
+| **Calendar**           | 8 weeks (Mon 12 May → Fri 4 Jul 2025), \~30 hrs/week <br> • Morning: 2 h theory + lab (Mon‑Thu) <br> • Afternoon: 4 h project / self‑study                                                                                                         |
+| **End‑products**       | Reproducible codebase (GitHub), technical report, slide deck, recorded demo                                                                                                                                                                        |
+| **Primary texts**      | ISLR 2e (James et al., 2023) ([An Introduction to Statistical Learning](https://www.statlearning.com/?utm_source=chatgpt.com))  ·  PML Books 1&2 (Murphy, 2022‑23) ([probml.github.io](https://probml.github.io/pml-book/?utm_source=chatgpt.com)) |
+| **Stack**              | Python 3.11, conda env, pandas, scikit‑learn, matplotlib, seaborn, PyMC/NumPyro, GitHub Projects, Docker, JupyterHub (on IITM GPU node or Colab)                                                                                                   |
+| **Capstone theme**     | “End‑to‑end predictive modelling on a public health‑care cost dataset” (regression + uncertainty quantification)                                                                                                                                   |
+| **Mentoring rhythm**   | Daily stand‑up (10 min), Weekly code‑review (Wed), Mid‑term demo (end W4), Final rehearsal (W8‑Wed)                                                                                                                                                |
+| **Evaluation weights** | Technical accuracy 30 % · Statistical rigour 20 % · Reproducibility & docs 15 % · Teamwork 15 % · Communication 10 % · Creativity 10 %                                                                                                             |
 
 ---
 
@@ -82,9 +83,3 @@ Roles rotate weekly for cross‑training.
 5. **Iterate**—adjust weekly scope if interns move faster/slower; swap datasets if domain change needed.
 
 This design keeps theory tightly coupled to practice, leverages ISLR for approachable statistical learning, and layers PML’s Bayesian perspective during the project phase—giving interns both classical and probabilistic toolkits within eight focused weeks.
-
-[1]: https://www.statlearning.com/?utm_source=chatgpt.com "An Introduction to Statistical Learning"
-[2]: https://probml.github.io/pml-book/?utm_source=chatgpt.com "“Probabilistic machine learning”: a book series by Kevin Murphy ..."
-
- 
- 
