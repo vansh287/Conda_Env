@@ -1,5 +1,4 @@
-
-Below is a plug‑and‑play template that meets all eight elements, pairs each learning goal with readings from ***An Introduction to Statistical Learning (ISLR, 2e)*** and ***Probabilistic Machine Learning (PML, 2022/23)***, and splits an eight‑week program into **4 weeks of guided learning** and **4 weeks of team implementation**.
+# Instructions and Roadmap for Interns 
 
 ---
 
