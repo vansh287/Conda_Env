@@ -72,13 +72,3 @@ Roles rotate weekly for cross‑training.
 | Creativity             | 10     | Novel features, insightful error analysis    |
 
 ---
-
-### How to Deploy this Template
-
-1. **Fill dates/names** in sections above.
-2. **Create a GitHub organisation** with a blank project board; pre‑configure issue templates matching each week’s deliverables.
-3. **Provision compute** (JupyterHub on IITM GPU node or Colab Pro credits).
-4. **Kick‑off meeting (Day 1)**: walk interns through this document, assign initial roles, and clone starter repository.
-5. **Iterate**—adjust weekly scope if interns move faster/slower; swap datasets if domain change needed.
-
-This design keeps theory tightly coupled to practice, leverages ISLR for approachable statistical learning, and layers PML’s Bayesian perspective during the project phase—giving interns both classical and probabilistic toolkits within eight focused weeks.
