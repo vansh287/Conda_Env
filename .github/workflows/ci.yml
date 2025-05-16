@@ -1,0 +1,21 @@
+name: Conda Environment Check
+
+on: [push, pull_request]
+
+jobs:
+  test-env:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Miniconda
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          activate-environment: stat-learn-env
+          environment-file: environment.yml
+          python-version: 3.10
+
+      - name: Verify packages
+        run: |
+          python -c "import numpy, pandas, sklearn; print('Packages installed successfully!')"
