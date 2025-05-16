@@ -1,4 +1,4 @@
-name: Conda Environment Check
+# name: Conda Environment Check
 
 on: [push, pull_request]
 
