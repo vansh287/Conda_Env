@@ -1,10 +1,11 @@
-name: stat-learn-env
+name: stats_env
 channels:
+  - defaults
   - conda-forge
 dependencies:
-  - python=3.10
+  - python=3.9
   - numpy
   - pandas
   - scikit-learn
-  - pip
-
+  - matplotlib
+  - pytest
