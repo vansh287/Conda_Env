@@ -5,12 +5,10 @@ on: [push, pull_request]
 jobs:
   test-env:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
-      - name: List repo files
-        run: ls -la
 
       - name: Set up Miniconda
         uses: conda-incubator/setup-miniconda@v3
@@ -19,8 +17,8 @@ jobs:
           python-version: 3.10
           auto-activate-base: false
 
-      - name: Activate environment and check packages
+      - name: Test imports
+        shell: bash -l {0}
         run: |
-          source activate stat-learn-env
-          python -c "import numpy, pandas, sklearn; print('Packages installed successfully!')"
+          python -c "import numpy, pandas, sklearn; print('All packages imported successfully!')"
 
