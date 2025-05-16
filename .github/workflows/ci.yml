@@ -1,24 +1,28 @@
-name: Conda Environment Check
-
-on: [push, pull_request]
-
+name: CI Workflow
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 jobs:
-  test-env:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Set up Miniconda
-        uses: conda-incubator/setup-miniconda@v3
-        with:
-          environment-file: environment.yml
-          python-version: 3.10
-          auto-activate-base: false
-
-      - name: Test imports
-        shell: bash -l {0}
-        run: |
-          python -c "import numpy, pandas, sklearn; print('All packages imported successfully!')"
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Set up Conda
+      uses: conda-incubator/setup-miniconda@v2
+      with:
+        auto-update-conda: true
+        environment-file: environment.yml
+        activate-environment: stats_env
+    - name: Verify Conda Environment
+      shell: bash -l {0}
+      run: |
+        conda info
+        conda list
+    - name: Run Tests
+      shell: bash -l {0}
+      run: |
+        pytest  # Replace with your project’s test command
 
